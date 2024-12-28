@@ -1,0 +1,134 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* Home section styles */
+#home .profile-photo {
+    display: block;
+    margin: auto;
+    width: 150px; /* Adjust size as needed */
+    border-radius: 50%;
+}
+
+#home h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* About section styles */
+#about {
+    padding: 20px 0;
+}
+
+#about ul {
+    list-style: disc;
+    margin-left: 40px;
+}
+
+/* Projects section styles */
+#projects .project {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#projects .project img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Contact section styles */
+#contact form {
+    margin-top: 20px;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact textarea {
+    height: 150px;
+}
+
+#contact button {
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}

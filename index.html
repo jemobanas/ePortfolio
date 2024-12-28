@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Darwen B. Bañas - ePortfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet"> 
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: 'Luckiest Guy', cursive; /* Use the imported font */
+            background-color: #f0f0f0; /* Light gray background */
+            color: #333; /* Dark gray text */
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        .header {
+            background-color: #02b8d1; /* Light blue like Finn's shirt */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .logo img {
+            max-height: 80px; 
+        }
+        .navbar {
+            margin-top: 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        .navbar .active {
+            text-shadow: 0 0 5px yellow; /* Highlight active link */
+        }
+
+        /* Home Section Styling */
+        .home {
+            background-color: #f8f8f8; /* Off-white background */
+            padding: 40px 0;
+        }
+        .home-content {
+            text-align: center;
+        }
+        .home-content h2 {
+            font-size: 3em;
+            color: #e6882e; /* Orange like Jake */
+        }
+        .home-content .name {
+            color: #488c41; /* Green like Finn's backpack */
+        }
+        .social-media a {
+            color: #333;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e6882e; /* Orange */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .home-image {
+            margin-top: 40px;
+        }
+        .profile-photo {
+            max-width: 300px;
+            border-radius: 50%; /* Make it circular */
+            border: 5px solid #02b8d1; /* Blue border */
+        }
+
+        /* About Section Styling */
+        .about {
+            padding: 40px 0;
+            background-color: #fff; /* White background */
+        }
+        .about-content {
+            text-align: center;
+        }
+        .about-content h2 {
+            font-size: 2.5em;
+            color: #e6882e; /* Orange */
+        }
+        .about-content h3 {
+            color: #488c41; /* Green */
+            margin-top: 30px;
+        }
+        .skills, .interests {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills li, .interests li {
+            margin: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .skills li i, .interests li i {
+            margin-right: 10px;
+            color: #e6882e; /* Orange icons */
+        }
+
+        /* Projects Section Styling */
+        .projects {
+            background-color: #f8f8f8; /* Off-white background */
+            padding: 40px 0;
+        }
+        .projects-intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+            gap: 20px;
+        }
+        .project {
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden; /* Hide image overflow */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .project-image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; 
+        }
+        .project-content {
+            padding: 20px;
+        }
+        .project-title {
+            color: #e6882e; /* Orange */
+        }
+        .project-btn {
+            background-color: #488c41; /* Green button */
+        }
+
+        /* Contact Section Styling */
+        .contact {
+            padding: 40px 0;
+            background-color: #fff;
+        }
+        .contact h2 {
+            font-size: 2.5em;
+            color: #e6882e; /* Orange */
+            text-align: center;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 30px auto;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="c:\Users\james\ePortfolio\image\logo.jpg" alt="Your Logo"> 
+            </a>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="home">
+            <div class="container">
+                <div class="home-content">
+                    <h2>Welcome to My ePortfolio</h2>
+                    <p>Hi, I'm <span class="name">James Darwen B. Bañas</span>,<br> a third-year Computer Science student at USTP Lapasan and an aspiring software engineer.<br> I'm passionate about leveraging technology to create innovative solutions.<br> Welcome to my journey in the world of software engineering!</p>
+                    <div class="social-media">
+                        <a href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#!"><i class="fab fa-github"></i></a>
+                        <a href="#!"><i class="fab fa-twitter"></i></a>
+                        <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <a href="#!" class="btn">Download CV</a>
+                </div>
+                <div class="home-image">
+                    <img src="c:\Users\james\ePortfolio\image\profile.jpg" alt="Profile Photo of James Darwen" class="profile-photo">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content"> 
+                    <h2 class="heading">About <span>Me</span></h2>
+                    <p>I'm currently pursuing my Bachelor of Science in Computer Science at the University of Science and Technology of Southern Philippines (USTP) in Lapasan. My academic journey has equipped me with a solid foundation in software development principles and practices. As an aspiring software engineer, I'm driven to continuously learn and apply cutting-edge technologies to develop efficient and user-friendly applications.</p>
+                    <p>Beyond the academic realm, I'm an individual with a diverse set of interests and skills. I have a keen eye for detail, which I attribute to my hobby in photography. I also enjoy the strategic thinking involved in gaming, and I have hands-on experience as a drone operator and in Cisco networking. These experiences have not only been enjoyable but have also honed my technical skills and problem-solving abilities.</p>
+                    <p>In my free time, I love the thrill of driving, which, much like coding, requires focus and quick decision-making. I also find solace in nature through fishing, running, and mountain climbing. These activities help me maintain a balanced lifestyle and provide me with a fresh perspective that I bring back to my tech endeavors.</p>
+                    <a href="#" class="btn">Read More</a>
+                    <h3>Skills</h3>
+                    <ul class="skills">
+                        <li><i class="fas fa-code"></i> Programming (C++, Java, Python, JavaScript)</li>
+                        <li><i class="fas fa-laptop-code"></i> Web Development (HTML, CSS, JavaScript)</li>
+                        <li><i class="fas fa-database"></i> Database Management (e.g., SQL, MongoDB)</li>
+                        <li><i class="fas fa-tools"></i> Problem Solving</li>
+                        <li><i class="fas fa-users"></i> Teamwork & Communication</li>
+                        <li><i class="fas fa-fighter-jet"></i> Drone Operator</li>
+                        <li><i class="fas fa-network-wired"></i> Cisco Network</li>
+                        <li><i class="fas fa-car"></i> Driving</li>
+                    </ul>
+                    <h3 class="section-title">Interests</h3>
+                    <ul class="interests">
+                        <li><i class="fas fa-camera"></i> Photography</li>
+                        <li><i class="fas fa-gamepad"></i> Gaming</li>
+                        <li><i class="fas fa-car"></i> Driving Cars</li>
+                        <li><i class="fas fa-fish"></i> Fishing</li>
+                        <li><i class="fas fa-running"></i> Running</li>
+                        <li><i class="fas fa-mountain"></i> Mountain Climbing</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="heading"><span>My </span>Projects</h2>
+                <p class="projects-intro">Here are some of the projects I've worked on. Note: As a student, you may not have extensive real-world projects yet. You can include academic projects, personal projects, or even contributions to open-source projects.</p>
+                <div class="projects-grid">
+                    <div class="project">
+                        <div class="project-image">
+                            <img src="image/Screenshot 2024-12-28 132857.png" alt="Screenshot of Project 1">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title" data-project="project1">Project 1 Title: Pet Adoption Website</h3>
+                            <p>This project aimed to create a user-friendly website to help connect people with adoptable pets. The website provides a platform for animal shelters and individuals to post pets available for adoption, allowing users to browse and find their perfect match.
+
+                                Technologies Used:
+                                
+                                HTML
+                                
+                                CSS
+                                
+                                JavaScript
+                                
+                                PHP
+                                
+                                MySQL
+                                
+                                Key Features:
+                                
+                                Pet Listing and Browsing
+                                
+                                Pet Adoption Application
+                                
+                                Learning Outcomes:
+                                
+                                Gained proficiency in front-end development with HTML, CSS, and JavaScript to create an interactive and responsive user interface.
+                                
+                                Learned to integrate a back-end database (MySQL) with a website using PHP to store and retrieve pet information dynamically.
+                                
+                                Enhanced understanding of website development processes, including planning, designing, coding, and testing.</p>
+                            <a href="https://github.com/jemobanas/PetAdoptionWebsite.git" target="_blank" class="btn project-btn">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-image">
+                            <img src="image/Screenshot 2024-12-28 151109.png" alt="Screenshot of Project 2">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title" data-project="project2">Project Title: K-Means Clustering Visualization and Evaluation</h3>This project implements the K-Means clustering algorithm to group unlabeled data into clusters based on their similarity. The code generates synthetic data, visualizes the iterative process of cluster formation, and evaluates the clustering performance using metrics like the Silhouette Score, Davies-Bouldin Index, and Adjusted Rand Index.</p>
+                            <a href="https://github.com/jemobanas/K-Means-Clustering-Visualization-and-Evaluation.git" target="_blank" class="btn project-btn">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-image">
+                            <img src="image/Screenshot 2024-12-28 152931.png" alt="Screenshot of Project 3">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title" data-project="project3">Project Title: Turing Machine Simulator</h3>Project Description:This  Turing Machine simulator, built with Tkinter, allows users to input strings and test them against predefined Turing Machine rules to visualize their execution and determine acceptance. This project was developed for an automata theory course to provide a practical understanding of Turing machine concepts.</p>
+                            <a href="https://github.com/jemobanas/Project-Title-Turing-Machine-Simulator.git" target="_blank" class="btn project-btn">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="heading">Contact <span>Me</span></h2>
+                    <div class="input-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 James Darwen B. Bañas. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script> 
+</body>
+</html
